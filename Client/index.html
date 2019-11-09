@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+        <title> tODOmvc</title>
+        <meta charset="utf-8">
+        <link href="style.css" rel="stylesheet">
+</head>
+
+<body>
+        <h1>todos</h1>
+
+        <section class="todomvc" id="todomvc">
+
+                <header class="header">
+                        <input type="text" class="typebox" id='textbox' placeholder="what needs to be done?" autocomplete="off" />
+                </header>
+                
+                <section class="main">
+                        <div class="todo-list" id="list">
+                                <ul class="ul-element" id="ul-todo-list">
+
+                                </ul>
+                        </div>
+                </section>
+                <section class="footer">
+                        <button id="f0" class="btn-filter selected-filter" onclick="setFilter(0)">All</button>
+                        <button id="f1" class="btn-filter" onclick="setFilter(1)">Active</button>
+                        <button id="f2" class="btn-filter" onclick="setFilter(2)">Completed</button>
+                        <button type="button" value="deleteAll" onclick="deleteAll()" id="deletebutton">Delete All</button>
+                        <button id="f3" class="btn-filter" onclick=upload()>Upload</button>
+                        <button id="f3" class="btn-filter" onclick=download()>Download</button>
+
+                </section>
+        </section>
+        <footer class="underbox">
+                <p>Double click to edit a todo</p>
+                <p>Writen by</p>
+                <p>Part of TodoMVC</p>
+        </footer>
+        <script src="model.js"></script>
+        <script src="database.js"></script>
+        <script src="view.js"></script>
+        <script src="controler.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,104 @@
+html, body {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    width: 100%;
+    font-size: 70px;
+    font-weight: 100;
+    text-align: center;
+    color: rgb(196, 30, 85);
+}
+
+.header{
+    display:flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-content: flex-start;
+}
+
+.typebox {
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 5px 8px;
+    width: 50vw;
+}
+
+.editbox {
+    font-size: 20px;
+    box-sizing: border-box;
+    padding: 5px 8px;
+    
+}
+
+::placeholder {
+    color: rgb(190, 188, 188);
+    font-size: 17px;
+}
+
+.main {
+    position: relative;
+    justify-content: center;
+    display:flex;
+}
+
+.footer {
+    position: relative;
+    
+    justify-content: center;
+    display:flex;
+}
+
+.todo-list {
+    margin: 2;
+    position: relative;
+    padding: 0;
+    width: 51vw; 
+}
+
+.todo-list div {
+    position: relative;
+    font-size: 19px;
+    border-bottom: 1px solid #ededed;  
+    margin: 2px;
+    padding: 6px; 
+}
+
+.todo-list img{
+    width: 15px;
+    margin-left: 5px ;
+}
+
+.selected-filter {
+	background-color: green; 
+}
+
+.btn-add {
+    background-color:gray; 
+    border-style: solid;
+    flex-grow: 0;
+    margin: 0 5px;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.btn-delete {
+    background-color: gray; 
+    border-style: solid;
+    flex-grow: 0;
+    margin: 0 5px;
+    padding: 12px;
+    cursor: pointer;
+}
+
+.underbox {
+    margin: 65px auto 0;
+    color: #bfbfbf;
+    font-size: 12px;
+    text-shadow: 10 12px 45 rgba(255, 255, 255, 0.329);
+    text-align: center;
+    width: 500px;
+}
+
+
